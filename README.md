@@ -25,7 +25,7 @@ This library is designed for RE, originally made as a helper lib to speed up cra
 - **Search 1 billion combinations in ~15 seconds**
 - **Linear scaling** with CPU core count
 
-## 🛠️ Requirements
+## Requirements
 
 **CPU Requirements:**
 - **AVX-512F** instruction set (Intel Skylake-X+, AMD Zen 4+)
