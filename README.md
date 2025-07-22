@@ -82,13 +82,6 @@ int main() {
 }
 ```
 
-### Integration with CMake
-```cmake
-find_package(HashFinderAVX512 REQUIRED)
-add_executable(myapp main.cpp)
-target_link_libraries(myapp PRIVATE HashFinder::AVX512)
-```
-
 ## API Reference
 
 ### Core Functions
