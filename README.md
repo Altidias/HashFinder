@@ -24,12 +24,6 @@ This library is designed for RE, originally made as a helper lib to speed up cra
 
 ## Building
 
-### Clone Repository
-```bash
-git clone https://github.com/altidias/HashFinderAVX512.git
-cd HashFinderAVX512
-```
-
 ### Build Library
 ```bash
 # Configure
