@@ -12,7 +12,6 @@
 
 namespace HashFinder {
 
-    // AVX-512 CPU detection
     bool is_avx512_available() {
         int cpui[4];
         __cpuid(cpui, 7);
@@ -41,7 +40,6 @@ namespace HashFinder {
         return hash;
     }
 
-    // AVX-512 hasher class
     class AVX512Hasher {
     private:
         static constexpr size_t SIMD_WIDTH = 16;
@@ -86,15 +84,12 @@ namespace HashFinder {
                 hashes = _mm512_mask_xor_epi32(hashes, non_zero_mask, hashes, digits);
                 hashes = _mm512_mask_mullo_epi32(hashes, non_zero_mask, hashes, fnv_prime);
             }
-
-            // Extract results
             std::array<uint32_t, SIMD_WIDTH> result{};
             _mm512_storeu_si512(reinterpret_cast<__m512i*>(result.data()), hashes);
             return result;
         }
     };
 
-    // Main search function
     Result find_hash_match(uint32_t target_hash, const Config& config, ProgressCallback callback) {
         Result result;
 
