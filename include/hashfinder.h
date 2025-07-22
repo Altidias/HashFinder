@@ -1,11 +1,9 @@
-// hashfinder.h - AVX-512 Hash Finder Library
 #pragma once
 
 #include <string>
 #include <functional>
 #include <cstdint>
 
-// For static library, no export/import decorations needed
 #define HASHFINDER_API
 
 namespace HashFinder {

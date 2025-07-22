@@ -1,4 +1,3 @@
-// hashfinder.cpp - Implementation
 #include "hashfinder.h"
 #include <iostream>
 #include <chrono>
