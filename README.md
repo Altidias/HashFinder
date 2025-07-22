@@ -15,7 +15,7 @@ This library is designed for RE, originally made as a helper lib to speed up cra
 
 | Algorithm | Input Type | Output | Status |
 |-----------|------------|---------|--------|
-| **FNV-1a 32-bit** | Numeric digits | `uint32_t` | Implemented |
+| **FNV-1a** | Numeric digits | `uint32_t` | Implemented |
 
 ## Requirements
 
