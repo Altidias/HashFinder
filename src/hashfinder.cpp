@@ -17,8 +17,8 @@ namespace HashFinder {
         __cpuid(cpui, 7);
         return (cpui[1] & (1 << 16)) != 0; // Check AVX-512F bit
     }
-
-    // Scalar FNV-1a hash for single number
+    
+    // Scalar FNV-1a hash for single number https://en.wikipedia.org/wiki/Fowler%E2%80%93Noll%E2%80%93Vo_hash_function
     uint32_t fnv1a_hash_digits(uint64_t number) {
         uint32_t hash = 0x811c9dc5;
         char digits[20]{}; // Support up to 20 digits
