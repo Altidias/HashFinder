@@ -11,7 +11,6 @@ namespace HashFinder {
     // Progress callback type: (current_progress, total_range, rate_per_sec, eta_seconds) -> void
     using ProgressCallback = std::function<void(uint64_t, uint64_t, double, double)>;
 
-    // Configuration structure
     struct Config {
         uint64_t start_range = 0;              // Start of search range
         uint64_t end_range = 1000000000ULL;    // End of search range  
@@ -20,7 +19,6 @@ namespace HashFinder {
         uint32_t thread_count = 0;             // Manual thread count (0 = auto)
     };
 
-    // Result structure
     struct Result {
         bool found = false;
         uint64_t value = 0;
