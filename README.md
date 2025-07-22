@@ -17,14 +17,6 @@ This library is designed for RE, originally made as a helper lib to speed up cra
 |-----------|------------|---------|--------|
 | **FNV-1a 32-bit** | Numeric digits | `uint32_t` | Implemented |
 
-
-## Performance
-
-**Tested on AMD Ryzen 9950X (32 threads, AVX-512):**
-- **~66 million hashes/second** for FNV-1a
-- **Search 1 billion combinations in ~15 seconds**
-- **Linear scaling** with CPU core count
-
 ## Requirements
 
 **CPU Requirements:**
