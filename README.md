@@ -1,6 +1,6 @@
-# HashFinderAVX512
+# HashFinder
 
-A high-performance hash brute-forcing library optimized for AVX-512 capable CPUs. Designed for reverse engineering, crackme challenges, and keygen development.
+A hash brute-forcing library optimized for AVX-512 capable CPUs. Designed for reverse engineering, crackme challenges, and keygen development.
 
 ## Features
 
