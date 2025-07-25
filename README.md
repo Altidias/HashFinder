@@ -31,9 +31,6 @@ cmake -B build -DCMAKE_BUILD_TYPE=Release
 
 # Build
 cmake --build build --parallel
-
-# Install 
-cmake --install build --prefix install
 ```
 
 ### Windows (Visual Studio)
